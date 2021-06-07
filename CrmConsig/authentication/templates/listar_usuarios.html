@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block main_content %}
+<h1>Usuários</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Nível de Permissão</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for u in users %}
+        <tr>
+            <th scope="col"><a href="{% url 'auth:user' u.user_id %}">{{ u.name }} </a></th>
+            <th scope="col">{{ u.role }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

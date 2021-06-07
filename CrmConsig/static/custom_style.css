@@ -1,0 +1,58 @@
+@media (max-width: 768px){
+    .matricula_button{
+        width: 100% !important;
+    }
+}
+table.table tbody tr:hover {
+    box-shadow: 0 0 20px 1px #b3b3b3;
+    animation: 0.5s ease;
+    cursor: pointer;
+    background-color: #efefef;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(167, 167, 167, 0.05);
+}
+table.table tr td,
+table.table tr th{
+    text-align: left;
+}
+.margem_simulada{
+    box-shadow: 0 0 20px 8px #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.border-top{
+    border-top: 2px solid black;
+}
+.alert-danger-1 .tooltip .tooltip-inner,
+.alert-danger-2 .tooltip .tooltip-inner,
+.alert-danger-3 .tooltip .tooltip-inner,
+.alert-danger-4 .tooltip .tooltip-inner,
+.alert-danger .tooltip .tooltip-inner{
+    background-color: red;
+}
+.alert-success-1 .tooltip .tooltip-inner,
+.alert-success-2 .tooltip .tooltip-inner,
+.alert-success-3 .tooltip .tooltip-inner,
+.alert-success-4 .tooltip .tooltip-inner,
+.alert-success .tooltip .tooltip-inner{
+    background-color: green;
+}
+.alert-danger .tooltip .arrow::before{
+    border-top-color: red;
+}
+.alert-success .tooltip .arrow::before{
+    border-top-color: green;
+}
+li.form_buttons.main-search.morphsearch-search {
+    display: none;
+}
+li.form_buttons.main-search.morphsearch-search.open {
+    display: flex;
+}
+#nome_cliente{
+    font-size: 18px;
+}
+.contratos_cartao_row{
+    background-color: #dadada;
+}

@@ -1,0 +1,43 @@
+{% load static %}
+
+<ul class="nav-right">
+    <li class="user-profile header-notification">
+        <div class="dropdown-primary dropdown">
+            <div id="dropdown1" class="dropdown-toggle" data-toggle="dropdown">
+                {% if request.user.usuario.photo %}
+                    <img src="{% get_media_prefix %}{{ request.user.usuario.photo }}" class="img-radius" alt="User-Profile-Image">
+                {% else %}
+                    <img src="{% get_media_prefix %}profile/istockphoto-477333976-612x612.jpg" class="img-radius" alt="User-Profile-Image">
+                {% endif %}
+                <span>{{ request.user.usuario.name|title }}</span>
+                <i class="feather icon-chevron-down"></i>
+            </div>
+            <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                <li>
+                    <a id="atualizar_dados" href="{% url 'auth:atualizar_senha' request.user.pk %}">
+                    <i class="feather icon-settings"></i> Atualizar Dados
+                    </a>
+                </li>
+                {% if request.user.usuario.pk %}
+                <li>
+                    <a id="user_profile" href="{% url 'auth:user_profile' request.user.usuario.pk %}">
+                    <i class="feather icon-user"></i> Profile
+                    </a>
+                </li>
+                {% endif %}
+                <!--
+                <li>
+                    <a href="email-inbox.html">
+                    <i class="feather icon-mail"></i> My Messages
+                    </a>
+                </li>
+                -->
+                <li>
+                    <a href="{% url 'logout' %}">
+                    <i class="feather icon-log-out"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block main_content %}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h3>Acessar Dados</h3>
+            <hr>
+            {% if error_msg %}
+            <div class="alert alert-warning" role="alert">
+                {{ error_msg }}
+            </div>
+            {% elif request.GET.error_msg %}
+            <div class="alert alert-warning" role="alert">
+                {{ request.GET.error_msg }}
+            </div>
+            {% endif %}
+            {% if matriculas %}
+            <div class="row">
+                {% for matricula in matriculas %}
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <form action="{% url 'data_consig:matricula_detalhada_view' %}"
+                          class="w-100 d-flex justify-content-center" method="POST">
+                        {% csrf_token %}
+                        <input hidden name="matricula" type="text" value="{{ matricula }}">
+                        <button class="btn hor-grd btn-grd-inverse matricula_button" type="submit">{{ matricula }}
+                        </button>
+                    </form>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="row col-12 m-0  ">
+                <div class="col-lg-6 col-md-12">
+                    <form action="{% url 'data_consig:cpf_view' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label class="" for="id_cpf">Pesquisar por CPF:</label>
+                            <input class="form-control" id="id_cpf" maxlength="14" name="cpf" placeholder="XXX.XXX.XXX-XX"
+                                   required type="text">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn hor-grd btn-grd-inverse" id="submit_cpf" type="submit">Pesquisar CPF
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <form action="{% url 'data_consig:matricula_detalhada_view' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="id_matricula">Pesquisar por matrícula:</label>
+                            <input class="form-control" id="id_matricula" name="matricula" placeholder="Número da matrícula" required
+                                   type="text">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn hor-grd btn-grd-inverse" id="submit_matricula" type="submit">Pesquisar
+                                Matrícula
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block custom_script %}
+<script>
+$("#id_cpf").keypress(function(event){
+    var cpf_digits = $(this).val();
+    var cpf_len = cpf_digits.length;
+    var insert_point = cpf_len == 3 | cpf_len == 7
+    if (event.key !== 'Backspace' && cpf_len > 2){
+        if (insert_point && cpf_len < 11 && event.key !== '.'){
+            $(this).val(cpf_digits + '.');
+        }
+        else if (cpf_len == 11 && event.key !== '-'){
+            $(this).val(cpf_digits + '-');
+        };
+    };
+});
+
+</script>
+{% endblock %}

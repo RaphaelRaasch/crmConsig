@@ -1,0 +1,14 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=alldigital
+Group=www-data
+WorkingDirectory=/home/alldigital/dev/CRM_CONSIG_DJANGO/CrmConsig
+ExecStart=/home/alldigital/dev/CRM_CONSIG_DJANGO/venv/bin/gunicorn --access-logfile - --workers 6 --bind unix:/home/alldigital/dev/CRM_CONSIG_DJANGO/CrmConsig/CrmConsig.sock CrmConsig.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+
+

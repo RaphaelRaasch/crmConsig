@@ -1,0 +1,45 @@
+{% extends 'theme_base.html' %}}
+
+{% load widget_tweaks %}
+{% load static %}
+
+{% block main_content %}
+<section class="login-block">
+    <!-- Container-fluid starts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <img alt="logo.png" src="{% static 'LogoRegister.png' %}" width="150">
+                </div>
+                <!-- Authentication card start -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- page body start -->
+                        <div class="page-body">
+                            <!-- Subscribe From card start -->
+                            <div class="card">
+                                <div class="card-block">
+                                    <h2 id="id_success_title">Registro concluído!</h2>
+                                    <hr>
+                                    <p style="font-size: 18px">
+                                        Nosso time irá verificar seus dados e, em breve, entraremos em contato!
+                                    </p>
+
+                                    <a class="float-right" href="{% url 'auth:access_basic' %}">Retornar ao Log-In</a>
+                                </div>
+                            </div>
+                            <!-- Subscribe From card end -->
+                        </div>
+                    <!-- page body end -->
+                    </div>
+                </div>
+                <!-- end of form -->
+            </div>
+            <!-- end of col-sm-12 -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container-fluid -->
+</section>
+{% endblock %}

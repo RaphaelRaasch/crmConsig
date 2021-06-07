@@ -1,0 +1,49 @@
+.j-forms input[type="text"],
+.j-forms input[type="password"],
+.j-forms input[type="email"],
+.j-forms input[type="search"],
+.j-forms input[type="tel"],
+.j-forms input[type="url"],
+.j-forms textarea, .j-forms select {
+    background: #fff;
+    border: 2px solid rgba(0,0,0,.12);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    color: rgba(0,0,0,.87);
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    height: 48px;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all.4s;
+    -moz-transition: all.4s;
+    -ms-transition: all.4s;
+    -o-transition: all.4s;
+    transition: all.4s;
+}
+.j-pro input[type="text"],
+.j-pro input[type="password"],
+.j-pro input[type="email"],
+.j-pro input[type="search"],
+.j-pro input[type="url"],
+.j-pro textarea,
+.j-pro select,
+.j-forms input[type="text"],
+.j-forms input[type="password"],
+.j-forms input[type="email"],
+.j-forms input[type="search"],
+.j-forms input[type="url"],
+.j-forms input[type="tel"],
+.j-forms textarea, .j-forms select {
+    border: 1px solid rgba(0,0,0,0.15);
+}

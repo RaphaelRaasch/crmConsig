@@ -1,0 +1,165 @@
+{% extends 'theme_base.html' %}
+
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}Cadastro de Usuário{% endblock %}
+
+{% block main_content %}
+<section class="login-block">
+    <!-- Container-fluid starts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <img alt="logo.png" src="{% static 'LogoRegister.png' %}" width="150">
+                </div>
+                <!-- Authentication card start -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- page body start -->
+                        <div class="page-body">
+                            <!-- Subscribe From card start -->
+                            <div class="card" style="background: transparent;">
+                                <div class="card-block">
+                                    <div class="wrapper wrapper-640">
+                                        <div class="j-tabs-container">
+                                            <!-- start tab #1 -->
+                                            {% if 'cadastro_btn' in request.POST %}
+                                                <input id="tab1" type="radio" name="tabs">
+                                            {% else %}
+                                                <input id="tab1" type="radio" name="tabs" checked="">
+                                            {% endif %}
+                                            <label class="j-tabs-label" for="tab1" title="Login">
+                                                <i class="icofont icofont-login "></i>
+                                                <span>Login</span>
+                                            </label>
+                                            <!-- end tab #1 -->
+                                            <!-- start tab #2 -->
+                                            {% if 'cadastro_btn' in request.POST %}
+                                                <input id="tab2" type="radio" name="tabs" checked="">
+                                            {% else %}
+                                                <input id="tab2" type="radio" name="tabs">
+                                            {% endif %}
+                                            <label id="id_tab_interest" class="j-tabs-label" for="tab2" title="Registration">
+                                                <i class="icofont icofont-ui-user"></i>
+                                                <span>Cadastro de Interesse</span>
+                                            </label>
+                                            <!-- end tab #2 -->
+                                            <!-- start form #1 -->
+                                            <div id="tabs-section-1" class="j-tabs-section">
+                                                <form method="post" class="j-forms" novalidate="">
+                                                    {% csrf_token %}
+                                                    <div class="content">
+                                                        <div class="j-row">
+                                                            {% if form.errors %}
+                                                                <div class="alert alert-danger">
+                                                                    {{ form.non_field_errors }}
+                                                                </div>
+                                                            {% endif %}
+                                                            <!-- end /.span6 -->
+                                                            <div class="span12">
+                                                                <div class="divider-text gap-top-20 gap-bottom-45">
+                                                                    <span id="login_title">Login</span>
+                                                                </div>
+                                                                <!-- start login -->
+                                                                <div class="unit">
+                                                                    <div class="input">
+                                                                        <label class="icon-right" for="id_username">
+                                                                            <i class="icofont icofont-ui-user"></i>
+                                                                        </label>
+                                                                        {% render_field form.username placeholder=form.username.label class='form-control' %}
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end login -->
+                                                                <!-- start password -->
+                                                                <div class="unit">
+                                                                    <div class="input">
+                                                                        <label class="icon-right" for="id_password">
+                                                                            <i class="icofont icofont-lock"></i>
+                                                                        </label>
+                                                                        {% render_field form.password placeholder=form.password.label class='form-control' %}
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end password -->
+                                                            </div>
+                                                            <!-- end /.span6 -->
+                                                        </div>
+
+                                                        <div class="divider gap-bottom-25"></div>
+                                                        <!-- end /.j-row -->
+                                                        <button type="submit" id="id_submit_login" class="btn btn-primary m-b-20 f-right">Entrar</button>
+                                                    </div>
+                                                    <!-- end /.content -->
+                                                </form>
+                                            </div>
+                                            <!-- end form #1 -->
+                                            <!-- start form #2 -->
+                                            <div id="tabs-section-2" class="j-tabs-section">
+                                                <form action="{% url 'auth:signup' %}" method="post" class="j-forms" novalidate="">
+                                                    {% csrf_token %}
+                                                    <div class="content">
+                                                        <div class="divider-text gap-top-20 gap-bottom-45">
+                                                            <span>Registro</span>
+                                                        </div>
+                                                        <!-- start full-name email -->
+                                                        <div class="j-row">
+                                                            {% if form.errors %}
+                                                                <div class="alert alert-danger">
+                                                                    {{ form.non_field_errors }}
+                                                                </div>
+                                                            {% endif %}
+                                                            <div class="span12 unit">
+                                                                <div class="input">
+                                                                    <label class="icon-right" for="id_name">
+                                                                        <i class="icofont icofont-ui-user"></i>
+                                                                    </label>
+                                                                    <input type="text" id="id_name" name="name" placeholder="Nome Completo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="j-row">
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <label class="icon-right" for="id_email">
+                                                                        <i class="icofont icofont-envelope"></i>
+                                                                    </label>
+                                                                    <input type="email" id="id_email" name="email" placeholder="email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6 unit">
+                                                                <div class="input">
+                                                                    <label class="icon-right" for="id_phone">
+                                                                        <i class="icofont icofont-phone"></i>
+                                                                    </label>
+                                                                    <input type="tel" id="id_phone" name="phone" placeholder="Telefone">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end confirm password -->
+                                                        <div class="divider gap-bottom-25"></div>
+
+                                                        <button name="cadastro_btn" type="submit" id="id_submit_register" class="btn btn-primary m-b-20 f-right">Enviar</button>
+                                                    </div>
+                                                    <!-- end /.content -->
+                                                </form>
+                                            </div>
+                                            <!-- end form #2 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Subscribe From card end -->
+                        </div>
+                    <!-- page body end -->
+                    </div>
+                </div>
+                <!-- end of form -->
+            </div>
+            <!-- end of col-sm-12 -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container-fluid -->
+</section>
+{% endblock%}

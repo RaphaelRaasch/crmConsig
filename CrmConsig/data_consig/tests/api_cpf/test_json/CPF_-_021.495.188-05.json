@@ -1,0 +1,47 @@
+{
+  "cpf": "02149518805",
+  "beneficios": [
+    {
+      "beneficio": "0706240146",
+      "nome": "KARIN AGARI JORGENSEN DE CAMARGO",
+      "dataNascimento": "1961-04-13",
+      "dib": "1983-06-28",
+      "especie": {
+        "codigo": "56",
+        "descricao": "PENSAO MENSAL VITALICIA - SINDROME DA TALIDOMIDA - LEI 7070/82"
+      }
+    },
+    {
+      "beneficio": "1264302786",
+      "nome": "KARIN AGARI J DE CAMARGO",
+      "dataNascimento": "1961-04-13",
+      "dib": "2005-05-01",
+      "especie": {
+        "codigo": "31",
+        "descricao": "AUXILIO-DOENCA PREVIDENCIARIO"
+      }
+    },
+    {
+      "beneficio": "5466201169",
+      "nome": "KARIN AGARI JORGENSEN DE CAMARGO",
+      "dataNascimento": "1961-04-13",
+      "dib": "2011-06-14",
+      "especie": {
+        "codigo": "32",
+        "descricao": "APOSENTADORIA POR INVALIDEZ PREVIDENCIARIA"
+      }
+    }
+  ],
+  "resultInfo": {
+    "timestamp": "2020-01-27T13:20:12.087Z",
+    "requesdId": "23802a5ffefc9f54",
+    "queryTime": 172
+  },
+  "billingInfo": {
+    "value": 1,
+    "charged": true,
+    "balance": 70,
+    "balanceValidUntil": "2020-01-31T00:00:00.000-0300",
+    "subscriptionId": "1rtvpp2ltuhyx"
+  }
+}

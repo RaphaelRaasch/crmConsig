@@ -1,0 +1,58 @@
+<!--Colorlib is the original author of this template.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>CRM Consig</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="#" name="description">
+    <meta content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app"
+          name="keywords">
+    <meta content="#" name="author">
+
+    <link href="../files/assets/images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'icon/themify-icons/themify-icons.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'icon/icofont/css/icofont.css' %}" rel="stylesheet" type="text/css">
+     <!-- jpro forms css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/j-pro/css/demo.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/j-pro/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/j-pro/css/j-forms.css' %}">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'auth_style.css' %}" rel="stylesheet" type="text/css">
+
+    <style>
+        .login-block{
+            background: url({% static 'bg.jpg' %}) no-repeat;
+        }
+    </style>
+</head>
+<body class="fix-menu">
+
+{% include 'theme_components/loader.html' %}
+{% block main_content %}
+{% endblock %}
+
+<!-- Required Jquery -->
+<script src="{% static 'jquery\js\jquery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'jquery-ui\js\jquery-ui.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'popper.js\js\popper.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'bootstrap\js\bootstrap.min.js' %}" type="text/javascript"></script>
+<!-- jquery slimscroll js -->
+<script src="{% static 'jquery-slimscroll\js\jquery.slimscroll.js' %}" type="text/javascript"></script>
+<!-- modernizr js -->
+<script src="{% static 'modernizr\js\modernizr.js' %}" type="text/javascript"></script>
+<script src="{% static 'modernizr\js\css-scrollbars.js' %}" type="text/javascript"></script>
+<!-- i18next.min.js -->
+<script src="{% static 'i18next\js\i18next.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'i18next-xhr-backend\js\i18nextXHRBackend.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js' %}"
+        type="text/javascript"></script>
+<script src="{% static 'jquery-i18next\js\jquery-i18next.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js\common-pages.js' %}" type="text/javascript"></script>
+</body>

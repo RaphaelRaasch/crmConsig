@@ -1,0 +1,221 @@
+{
+  "beneficio": "5149392886",
+  "nome": "JOSE LUIZ DOS SANTOS SILVA",
+  "dataNascimento": "1956-02-29",
+  "cpf": "13198416515",
+  "especie": {
+    "codigo": "32",
+    "descricao": "APOSENTADORIA POR INVALIDEZ PREVIDENCIARIA"
+  },
+  "dadosBancarios": {
+    "banco": {
+      "codigo": "341",
+      "nome": "ITAU"
+    },
+    "agencia": {
+      "codigo": "6439",
+      "nome": "SALVADOR - EXTRA ROTULA",
+      "endereco": {
+        "endereco": "AVENIDA BARROS REIS, 1400",
+        "bairro": "CABULA",
+        "cidade": "SALVADOR",
+        "cep": "41150-200",
+        "uf": "BA"
+      },
+      "orgaoPagador": 647601
+    },
+    "meioPagamento": {
+      "tipo": "CONTA CORRENTE",
+      "numero": "0000027985"
+    }
+  },
+  "situacaoBeneficio": "ATIVO",
+  "nit": "10792120660",
+  "identidade": "00000871843",
+  "sexo": "MASCULINO",
+  "uf": "BA",
+  "dib": "2005-10-04",
+  "valorBeneficio": 3843.01,
+  "possuiRepresentanteLegalProcurador": false,
+  "pensaoAlimenticia": false,
+  "bloqueioEmprestismo": false,
+  "beneficioPermiteEmprestimo": true,
+  "contratosEmprestimo": [
+    {
+      "contrato": "328880073-7",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "623",
+        "nome": "PAN"
+      },
+      "dataInicioContrato": "2019-08-15",
+      "competenciaInicioDesconto": "10/2019",
+      "competenciaFimDesconto": "09/2025",
+      "dataInclusao": "2019-08-15",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 2438.14,
+      "valorParcela": 68.78,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 68,
+      "saldoQuitacao": 2427.02,
+      "taxa": 2.25
+    },
+    {
+      "contrato": "00000000000007322386",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "041",
+        "nome": "BANRISUL"
+      },
+      "dataInicioContrato": "2019-07-31",
+      "competenciaInicioDesconto": "09/2019",
+      "competenciaFimDesconto": "07/2025",
+      "dataInclusao": "2019-07-31",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 2994.46,
+      "valorParcela": 67.29,
+      "quantidadeParcelas": 71,
+      "quantidadeParcelasEmAberto": 66,
+      "saldoQuitacao": 2887.15,
+      "taxa": 1.42
+    },
+    {
+      "contrato": "00000000000007322463",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "041",
+        "nome": "BANRISUL"
+      },
+      "dataInicioContrato": "2019-07-31",
+      "competenciaInicioDesconto": "09/2019",
+      "competenciaFimDesconto": "07/2025",
+      "dataInclusao": "2019-07-31",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 36511.06,
+      "valorParcela": 796.0,
+      "quantidadeParcelas": 71,
+      "quantidadeParcelasEmAberto": 66,
+      "saldoQuitacao": 35088.15,
+      "taxa": 1.32
+    },
+    {
+      "contrato": "00000000000007323823",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "041",
+        "nome": "BANRISUL"
+      },
+      "dataInicioContrato": "2019-07-31",
+      "competenciaInicioDesconto": "09/2019",
+      "competenciaFimDesconto": "06/2025",
+      "dataInclusao": "2019-07-31",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 2348.23,
+      "valorParcela": 54.5,
+      "quantidadeParcelas": 70,
+      "quantidadeParcelasEmAberto": 65,
+      "saldoQuitacao": 2267.87,
+      "taxa": 1.51
+    },
+    {
+      "contrato": "00000000000007323852",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "041",
+        "nome": "BANRISUL"
+      },
+      "dataInicioContrato": "2019-07-31",
+      "competenciaInicioDesconto": "09/2019",
+      "competenciaFimDesconto": "07/2025",
+      "dataInclusao": "2019-07-31",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 2159.5,
+      "valorParcela": 50.1,
+      "quantidadeParcelas": 71,
+      "quantidadeParcelasEmAberto": 66,
+      "saldoQuitacao": 2089.42,
+      "taxa": 1.53
+    },
+    {
+      "contrato": "00000000000007323879",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "041",
+        "nome": "BANRISUL"
+      },
+      "dataInicioContrato": "2019-07-31",
+      "competenciaInicioDesconto": "09/2019",
+      "competenciaFimDesconto": "07/2025",
+      "dataInclusao": "2019-07-31",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 2041.85,
+      "valorParcela": 47.67,
+      "quantidadeParcelas": 71,
+      "quantidadeParcelasEmAberto": 66,
+      "saldoQuitacao": 1976.89,
+      "taxa": 1.55
+    }
+  ],
+  "contratosCartao": [
+    {
+      "contrato": "52-0221363/16_01",
+      "tipoEmprestimo": {
+        "codigo": 76,
+        "descricao": "Reserva de Margem para Cartão de Crédito"
+      },
+      "banco": {
+        "codigo": "707",
+        "nome": "DAYCOVAL"
+      },
+      "dataInicioContrato": "2017-11-29",
+      "dataInclusao": "2017-11-29",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "limiteCartao": 4070.0,
+      "valorReservado": 172.44
+    }
+  ],
+  "resultInfo": {
+    "timestamp": "2020-01-29T14:02:18.641Z",
+    "requesdId": "f9d6c328451b8360",
+    "queryTime": 501
+  },
+  "billingInfo": {
+    "value": 1.0,
+    "charged": true,
+    "balance": 40.0,
+    "balanceValidUntil": "2020-01-31T00:00:00.000-0300",
+    "subscriptionId": "1rtvpp2ltuhyx"
+  }
+}

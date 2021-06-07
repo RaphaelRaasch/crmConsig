@@ -1,0 +1,93 @@
+{% extends 'theme_base.html' %}}
+
+{% load widget_tweaks %}
+{% load static %}
+
+{% block main_content %}
+<section class="login-block">
+    <!-- Container-fluid starts -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="md-float-material form-material" method="POST">
+                    {% csrf_token %}
+                    <div class="text-center">
+                        <img alt="logo.png" src="{% static 'LogoRegister.png' %}" width="150">
+                    </div>
+                    <div class="auth-box card">
+                        <div class="card-block">
+                            <div class="row m-b-20">
+                                <div class="col-md-12">
+                                    <h3 class="text-center txt-primary">Cadastrar Usuário</h3>
+                                    <hr>
+                                </div>
+                            </div>
+                            {% if msg %}
+                                <div class="{{ class }}">
+                                    {{ msg }}
+                                </div>
+                            {% endif %}
+                            <div class="form-group form-primary">
+                                {% render_field user_form.username placeholder=user_form.username.label class='form-control' %}
+                            </div>
+                            <div class="form-group form-primary">
+                                {% render_field user_form.password1 placeholder=user_form.password1.label class='form-control' %}
+                                <ul>
+                                    <li>A senha não pode ser muito parecida com o resto das informações pessoais.</li>
+                                    <li>A senha precisa conter pelo menos 8 caracteres.</li>
+                                    <li>A senha não pode ser uma senha comumente utilizada.</li>
+                                    <li>A senha não pode ser inteiramente numérica.</li>
+                                </ul>
+                            </div>
+                            <div class="form-group form-primary">
+                                {% render_field user_form.password2 placeholder='Repetir Senha' class='form-control' %}
+                                <span>Informe a mesma senha informada anteriormente para verificação.</span>
+                            </div>
+                            <div class="form-group form-primary">
+                                {% render_field custom_form.name placeholder=custom_form.name.label class='form-control' %}
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <label for="id_role">Tipo de Usuário:</label>
+                                    {% render_field custom_form.role class='form-control' %}
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="id_phone">Telefone:</label>
+                                    {% render_field custom_form.phone placeholder='Telefone' class='form-control' %}
+                                </div>
+                            </div>
+                            <div class="form-group form-primary">
+                                <label>Foto:</label>
+                                {% render_field custom_form.photo class='form-control' %}
+                            </div>
+                            <div class="row m-t-30">
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20"
+                                            type="submit">
+                                        Cadastrar Agora
+                                    </button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="text-inverse text-left m-b-0">Obrigado.</p>
+                                    <p class="text-inverse text-left"><a href="{% url 'data_consig:cpf_view' %}"><b
+                                            class="f-w-600">Retornar ao site</b></a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img alt="small-logo.png" src="{% static 'LogoRodape.png' %}" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- end of col-sm-12 -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container-fluid -->
+</section>
+{% endblock %}
+

@@ -1,0 +1,14 @@
+
+            <div class="row">
+                {% for matricula in matriculas %}
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <form action="{% url 'data_consig:matricula_detalhada_view' %}"
+                          class="w-100 d-flex justify-content-center" method="POST">
+                        {% csrf_token %}
+                        <input hidden name="matricula" type="text" value="{{ matricula }}">
+                        <button class="btn hor-grd btn-grd-inverse matricula_button" type="submit">{{ matricula }}
+                        </button>
+                    </form>
+                </div>
+                {% endfor %}
+            </div>

@@ -1,0 +1,257 @@
+{
+  "beneficio": "1040179875",
+  "nome": "EPIFANIO SCARDELATTO JUNIOR",
+  "dataNascimento": "1952-11-20",
+  "cpf": "60750197820",
+  "especie": {
+    "codigo": "21",
+    "descricao": "PENSAO POR MORTE PREVIDENCIARIA"
+  },
+  "dadosBancarios": {
+    "banco": {
+      "codigo": "104",
+      "nome": "CAIXA"
+    },
+    "agencia": {
+      "codigo": "0347",
+      "nome": "SAO CAETANO DO SUL",
+      "endereco": {
+        "endereco": "RUA RIO GRANDE DO SUL, 436",
+        "bairro": "CENTRO",
+        "cidade": "SAO CAETANO DO SUL",
+        "cep": "09520-010",
+        "uf": "SP"
+      },
+      "orgaoPagador": 265427
+    },
+    "meioPagamento": {
+      "tipo": "CONTA CORRENTE",
+      "numero": "0000018436"
+    }
+  },
+  "situacaoBeneficio": "ATIVO    - ORIGEM PA",
+  "nit": "10397865632",
+  "identidade": "00066048709",
+  "sexo": "MASCULINO",
+  "uf": "SP",
+  "dib": "1996-07-15",
+  "valorBeneficio": 1039.0,
+  "possuiRepresentanteLegalProcurador": false,
+  "pensaoAlimenticia": false,
+  "bloqueioEmprestismo": false,
+  "beneficioPermiteEmprestimo": true,
+  "contratosEmprestimo": [
+    {
+      "contrato": "603206964",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "029",
+        "nome": "ITAU CONSIGNADO"
+      },
+      "dataInicioContrato": "2019-11-01",
+      "competenciaInicioDesconto": "01/2020",
+      "competenciaFimDesconto": "12/2025",
+      "dataInclusao": "2019-11-13",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 2225.28,
+      "valorParcela": 49.14,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 71,
+      "saldoQuitacao": 2220.48,
+      "taxa": 1.39
+    },
+    {
+      "contrato": "22-838836069/19",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "739",
+        "nome": "BANCO CETELEM"
+      },
+      "dataInicioContrato": "2019-08-01",
+      "competenciaInicioDesconto": "10/2019",
+      "competenciaFimDesconto": "09/2025",
+      "dataInclusao": "2019-08-15",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 3174.63,
+      "valorParcela": 77.0,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 68,
+      "saldoQuitacao": 3116.16,
+      "taxa": 1.71
+    },
+    {
+      "contrato": "326277882-6",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "623",
+        "nome": "PAN"
+      },
+      "dataInicioContrato": "2019-04-03",
+      "competenciaInicioDesconto": "05/2019",
+      "competenciaFimDesconto": "04/2025",
+      "dataInclusao": "2019-04-03",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 663.03,
+      "valorParcela": 18.85,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 63,
+      "saldoQuitacao": 640.72,
+      "taxa": 2.28
+    },
+    {
+      "contrato": "210347110002789140",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "104",
+        "nome": "CAIXA"
+      },
+      "dataInicioContrato": "2018-12-29",
+      "competenciaInicioDesconto": "02/2019",
+      "competenciaFimDesconto": "01/2025",
+      "dataInclusao": "2018-12-29",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 4150.0,
+      "valorParcela": 108.62,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 60,
+      "saldoQuitacao": 3867.67,
+      "taxa": 1.98
+    },
+    {
+      "contrato": "572528265",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "029",
+        "nome": "ITAU CONSIGNADO"
+      },
+      "dataInicioContrato": "2017-04-11",
+      "competenciaInicioDesconto": "06/2017",
+      "competenciaFimDesconto": "05/2023",
+      "dataInclusao": "2017-04-11",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 605.86,
+      "valorParcela": 17.17,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 40,
+      "saldoQuitacao": 469.68,
+      "taxa": 2.27
+    },
+    {
+      "contrato": "000002073076",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "422",
+        "nome": "SAFRA"
+      },
+      "dataInicioContrato": "2016-07-28",
+      "competenciaInicioDesconto": "09/2016",
+      "competenciaFimDesconto": "08/2022",
+      "dataInclusao": "2016-07-28",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 949.54,
+      "valorParcela": 28.62,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 31,
+      "saldoQuitacao": 666.42,
+      "taxa": 2.51
+    }
+  ],
+  "contratosCartao": [
+    {
+      "contrato": "97-821163879/16",
+      "tipoEmprestimo": {
+        "codigo": 76,
+        "descricao": "Reserva de Margem para Cartão de Crédito"
+      },
+      "banco": {
+        "codigo": "739",
+        "nome": "BANCO CETELEM"
+      },
+      "dataInicioContrato": "2016-11-09",
+      "dataInclusao": "2016-11-09",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "limiteCartao": 1144.0,
+      "valorReservado": 44.0
+    },
+    {
+      "contrato": "97-6298764/16",
+      "tipoEmprestimo": {
+        "codigo": 71,
+        "descricao": "Reserva de Margem para Teste de Crédito"
+      },
+      "banco": {
+        "codigo": "43219",
+        "nome": "BANCO Teste"
+      },
+      "dataInicioContrato": "2019-11-09",
+      "dataInclusao": "2011-05-09",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": true,
+      "limiteCartao": 1244.0,
+      "valorReservado": 14.0
+    },
+    {
+      "contrato": "97-4214513562/16",
+      "tipoEmprestimo": {
+        "codigo": 79,
+        "descricao": "Reserva de Teste de Crédito"
+      },
+      "banco": {
+        "codigo": "31425",
+        "nome": "BANCO CETELEM"
+      },
+      "dataInicioContrato": "2030-11-09",
+      "dataInclusao": "2010-11-09",
+      "situacao": "Desativado",
+      "excluidoAps": true,
+      "excluidoBanco": true,
+      "limiteCartao": 1148.0,
+      "valorReservado": 41.0
+    }
+  ],
+  "resultInfo": {
+    "timestamp": "2020-01-29T14:02:16.937Z",
+    "requesdId": "e216207ddcc7839d",
+    "queryTime": 485
+  },
+  "billingInfo": {
+    "value": 1.0,
+    "charged": true,
+    "balance": 41.0,
+    "balanceValidUntil": "2020-01-31T00:00:00.000-0300",
+    "subscriptionId": "1rtvpp2ltuhyx"
+  }
+}

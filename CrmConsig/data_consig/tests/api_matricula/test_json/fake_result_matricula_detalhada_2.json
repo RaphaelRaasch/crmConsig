@@ -1,0 +1,285 @@
+{
+  "beneficio": "0706240146",
+  "status_code": 200,
+  "nome": "KARINA AGARIA JORGENSENA DE CAMARGO",
+  "dataNascimento": "1961-04-13",
+  "cpf": "02149518805",
+  "especie": {
+    "codigo": "56",
+    "descricao": "PENSAO MENSAL VITALICIA - SINDROME DA TALIDOMIDA - LEI 7070/82"
+  },
+  "dadosBancarios": {
+    "banco": {
+      "codigo": "756",
+      "nome": "BANCOOB"
+    },
+    "agencia": {
+      "codigo": "3213",
+      "nome": "CECRES",
+      "endereco": {
+        "endereco": "AVENIDA IPIRANGA, 324, BLOCO C, ED.INVESTIMENTO,3 ANDAR",
+        "uf": "SP"
+      },
+      "orgaoPagador": 817498
+    },
+    "meioPagamento": {
+      "tipo": "CONTA CORRENTE",
+      "numero": "0000025917"
+    }
+  },
+  "situacaoBeneficio": "ATIVO",
+  "nit": "12009267755",
+  "identidade": "0000006406830401",
+  "sexo": "MASCULINO",
+  "dib": "1983-06-28",
+  "valorBeneficio": 1166.49,
+  "possuiRepresentanteLegalProcurador": false,
+  "pensaoAlimenticia": false,
+  "bloqueioEmprestismo": true,
+  "beneficioPermiteEmprestimo": true,
+  "margem": {
+    "competencia": "06/2020",
+    "baseCalculoMargemConsignavel": 13166.49,
+    "margemDisponivelEmprestimo": 0.64,
+    "percentualMargemDisponivelEmprestimo": 0,
+    "percentualMargemTotalEmprestimo": 30,
+    "quantidadeEmprestimo": 64,
+    "possuiCartao": true,
+    "margemDisponivelCartao": 434.21,
+    "percentualmargemDisponivelCartao": 3.3,
+    "percentualMargemTotalCartao": 5
+  },
+  "contratosEmprestimo": [
+    {
+      "contrato": "608318828",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "029",
+        "nome": "ITAU CONSIGNADO"
+      },
+      "dataInicioContrato": "2019-12-19",
+      "competenciaInicioDesconto": "01/2020",
+      "competenciaFimDesconto": "12/2025",
+      "dataInclusao": "2019-12-19",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 6250,
+      "valorParcela": 199,
+      "quantidadeParcelas": 200,
+      "quantidadeParcelasEmAberto": 72,
+      "saldoQuitacao": 8.3,
+      "taxa": 2.25
+    },
+    {
+      "contrato": "185473494",
+      "tipoEmprestimo": {
+        "codigo": 88,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "955",
+        "nome": "OLE CONSIGNADO"
+      },
+      "dataInicioContrato": "2020-01-21",
+      "competenciaInicioDesconto": "02/2020",
+      "competenciaFimDesconto": "01/2026",
+      "dataInclusao": "2020-08-21",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 7029.44,
+      "valorParcela": 198.3,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 72,
+      "saldoQuitacao": 7151.25,
+      "taxa": 2.25
+    },
+    {
+      "contrato": "603404309",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "029",
+        "nome": "ITAU CONSIGNADO"
+      },
+      "dataInicioContrato": "2019-11-04",
+      "competenciaInicioDesconto": "12/2019",
+      "competenciaFimDesconto": "11/2025",
+      "dataInclusao": "2019-11-04",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 5795.28,
+      "valorParcela": 164.47,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 70,
+      "saldoQuitacao": 5837,
+      "taxa": 2.28
+    },
+    {
+      "contrato": "813243754",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "394",
+        "nome": "BRAD. FINANCIAM"
+      },
+      "dataInicioContrato": "2019-11-05",
+      "competenciaInicioDesconto": "12/2019",
+      "competenciaFimDesconto": "11/2025",
+      "dataInclusao": "2019-11-05",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 51596.56,
+      "valorParcela": 1130,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 71,
+      "saldoQuitacao": 51458.44,
+      "taxa": 1.36
+    },
+    {
+      "contrato": "58002443410-331",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "254",
+        "nome": "PARANA BANCO"
+      },
+      "dataInicioContrato": "2019-12-29",
+      "competenciaInicioDesconto": "01/2020",
+      "competenciaFimDesconto": "12/2025",
+      "dataInclusao": "2019-12-29",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 32235.5,
+      "valorParcela": 904.25,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 72,
+      "saldoQuitacao": 32785.77,
+      "taxa": 2.23
+    },
+    {
+      "contrato": "601901264",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "029",
+        "nome": "ITAU CONSIGNADO"
+      },
+      "dataInicioContrato": "2019-10-23",
+      "competenciaInicioDesconto": "11/2019",
+      "competenciaFimDesconto": "10/2025",
+      "dataInclusao": "2019-10-23",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 5846.7,
+      "valorParcela": 164,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 70,
+      "saldoQuitacao": 5883.28,
+      "taxa": 2.23
+    },
+    {
+      "contrato": "25-50509/19015",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "901",
+        "nome": "CCB BRASIL"
+      },
+      "dataInicioContrato": "2019-10-05",
+      "competenciaInicioDesconto": "11/2019",
+      "competenciaFimDesconto": "05/2025",
+      "dataInclusao": "2019-10-05",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 33056.36,
+      "valorParcela": 747.11,
+      "quantidadeParcelas": 67,
+      "quantidadeParcelasEmAberto": 65,
+      "saldoQuitacao": 32567.86,
+      "taxa": 1.32
+    },
+    {
+      "contrato": "0005416412",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "935",
+        "nome": "FACTA"
+      },
+      "dataInicioContrato": "2019-09-19",
+      "competenciaInicioDesconto": "10/2019",
+      "competenciaFimDesconto": "09/2025",
+      "dataInclusao": "2019-09-19",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 8280.62,
+      "valorParcela": 179.15,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 69,
+      "saldoQuitacao": 8113.94,
+      "taxa": 1.33
+    },
+    {
+      "contrato": "55-6469741/20",
+      "tipoEmprestimo": {
+        "codigo": 98,
+        "descricao": "Empréstimo por Consignação"
+      },
+      "banco": {
+        "codigo": "1",
+        "nome": "DAYCOVAL"
+      },
+      "dataInicioContrato": "2019-08-09",
+      "competenciaInicioDesconto": "09/2019",
+      "competenciaFimDesconto": "08/2025",
+      "dataInclusao": "2019-08-09",
+      "situacao": "Ativo",
+      "excluidoAps": false,
+      "excluidoBanco": false,
+      "valorEmprestado": 12570.68,
+      "valorParcela": 286.02,
+      "quantidadeParcelas": 72,
+      "quantidadeParcelasEmAberto": 68,
+      "saldoQuitacao": 12264.68,
+      "taxa": 1.49
+    }
+  ],
+  "contratosCartao": [
+  ],
+  "html": "PGh0bWw+PGhlYWQ+PHRpdGxlPkRlbW9uc3RyYXRpdm8gZGUgRW1wcsOpc3RpbW9zIENvbnNpZ25hZG9zPC90aXRsZT48bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD1VVEYtOCI+IDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+ICNjb3Jwb3tmb250LWZhbWlseSAgIDogQXJpYWwsc2VyaWY7bWF4LXdpZHRoIDogMTAwMHB4O21pbi13aWR0aCA6IDcwMHB4O2ZvbnQtc2l6ZSA6IDAuNzZlbTttYXJnaW46IDAgYXV0bzt9LmNlbnRyYWxpemFye3RleHQtYWxpZ24gOiBjZW50ZXI7fS5lc3F1ZXJkYXt0ZXh0LWFsaWduIDogcmlnaHQ7Zm9udC1zaXplICA6IDAuOThlbTttYXJnaW4gOiAyMHB4O30udGFibGUtcm91bmQtY29ybmVyIHt3aWR0aCAgOiA5NSU7dGV4dC1hbGlnbiA6IGNlbnRlcjtwYWRkaW5nOiA1cHg7Zm9udC1zaXplICA6IDAuOWVtO30udGFibGUtY2VudGVyIHt3aWR0aCAgOiA5MCU7dGV4dC1hbGlnbiA6IGNlbnRlcjtwYWRkaW5nOiA1cHg7fS5yb2RhcGV7Ym9yZGVyOiBzb2xpZCBibGFjayAxcHg7Ym9yZGVyLXJhZGl1cyA6IDNweDt0ZXh0LWFsaWduOiBjZW50ZXI7Zm9udC1zaXplIDogMC45ZW07bWFyZ2luOiA1cHggMTVweCBhdXRvO21heC13aWR0aCA6IDk3MHB4O21pbi13aWR0aCA6IDUzMHB4O3BhZGRpbmcgICA6IDVweCAzcHg7fXRke3BhZGRpbmcgICA6IDFweDtmb250LXNpemUgOiAxMnB4O31maWVsZHNldHttYXJnaW46IDE1cHg7Ym9yZGVyOiAxcHggc29saWQgYmxhY2s7Ym9yZGVyLXJhZGl1cyA6IDVweDt9IDwvc3R5bGU+IDwvaGVhZD4gPGJvZHk+IDxkaXYgaWQ9ImNvcnBvIj4gPGgyIGNsYXNzICA9ICJjZW50cmFsaXphciI+RGVtb25zdHJhdGl2byBkZSBFbXByw6lzdGltb3MgQ29uc2lnbmFkb3M8L2gyPiA8ZGl2IGNsYXNzID0gImVzcXVlcmRhIj4yNy8wMS8yMDIwIDEwOjEyOjM0PC9kaXY+IDxmaWVsZHNldD4gPGxlZ2VuZD48c3Ryb25nPklkZW50aWZpY2HDp8OjbyBkbyBGaWxpYWRvPC9zdHJvbmc+PC9sZWdlbmQ+IDx0YWJsZSB3aWR0aD0iOTUlIj4gPHRyPiA8dGQ+PHN0cm9uZz5Ob21lOiA8L3N0cm9uZz5LQVJJTiBBR0FSSSBKT1JHRU5TRU4gREUgQ0FNQVJHTzwvdGQ+IDx0ZD48c3Ryb25nPk5COiA8L3N0cm9uZz4wNzA2MjQwMTQ2PC90ZD4gPHRkPjxzdHJvbmc+Q1BGOiA8L3N0cm9uZz4wMjEuNDk1LjE4OC0wNTwvdGQ+IDwvdHI+IDwvdGFibGU+IDwvZmllbGRzZXQ+IDxmaWVsZHNldD4gPGxlZ2VuZD48c3Ryb25nPkRhZG9zIGRvIEJlbmVmw61jaW88L3N0cm9uZz48L2xlZ2VuZD4gPHRhYmxlIHdpZHRoPSI5NSUiPiA8dHI+IDx0ZCBjb2xzcGFuPSIzIj48c3Ryb25nPkVzcMOpY2llOiA8L3N0cm9uZz41NiAtIFBFTlNBTyBNRU5TQUwgVklUQUxJQ0lBIC0gU0lORFJPTUUgREEgVEFMSURPTUlEQSAtIExFSSA3MDcwLzgyPC90ZD4gPC90cj4gPHRyPiA8dGQgY29sc3Bhbj0iMyI+PHN0cm9uZz5TaXR1YcOnw6NvOiA8L3N0cm9uZz5BVElWTzx0ZD4gPC90cj4gPHRyPiA8dGQ+PHN0cm9uZz48dT5DYXJhY3RlcsOtc3RpY2FzPC91PjogPC9zdHJvbmc+PC90ZD4gPHRyPiA8dGQ+PC90ZD4gPC90cj4gPHRyPiA8dGQ+PHN0cm9uZz7DiSBQZW5zw6NvIEFsaW1lbnTDrWNpYTogPC9zdHJvbmc+TsOjbzwvdGQ+IDx0ZD48c3Ryb25nPlBvc3N1aSBSZXByZXNlbnRhbnRlIExlZ2FsOiA8L3N0cm9uZz5Ow6NvPC90ZD4gPHRkPjxzdHJvbmc+QmxvcXVlYWRvIHBhcmEgRW1wcsOpc3RpbW86IDwvc3Ryb25nPk7Do288L3RkPiA8dGQ+PHN0cm9uZz5FbGVnw612ZWwgcGFyYSBFbXByw6lzdGltbzogPC9zdHJvbmc+U2ltPC90ZD4gPC90cj4gPC90cj4gPC90YWJsZT4gPC9maWVsZHNldD4gPGZpZWxkc2V0PiA8bGVnZW5kPjxzdHJvbmc+TWFyZ2VtIENvbnNpZ27DoXZlbDwvc3Ryb25nPjwvbGVnZW5kPiA8dGFibGUgd2lkdGg9Ijk1JSI+IDx0cj4gPHRkPjxzdHJvbmc+QmFzZSBkZSBDw6FsY3VsbzogPC9zdHJvbmc+UiQgMTMuMTY2LDQ5PC90ZD4gPHRkPjxzdHJvbmc+TWFyZ2VtIHBhcmEgRW1wcsOpc3RpbW86IDwvc3Ryb25nPlIkIDAsNjQ8L3RkPiA8dGQ+PHN0cm9uZz5NYXJnZW0gcGFyYSBDYXJ0w6NvOiA8L3N0cm9uZz5SJCA0MzQsMjE8L3RkPiA8L3RyPiA8L3RhYmxlPiA8L2ZpZWxkc2V0PiA8ZmllbGRzZXQ+IDxsZWdlbmQ+PHN0cm9uZz5JbnN0aXR1acOnw6NvIFBhZ2Fkb3JhPC9zdHJvbmc+PC9sZWdlbmQ+IDx0YWJsZSB3aWR0aD0iOTUlIj4gPHRyPiA8dGQ+PHN0cm9uZz5DQkMvQmFuY286IDwvc3Ryb25nPjc1NiAtIEJhbmNvb2I8L3RkPiA8dGQ+PHN0cm9uZz5UaXBvOiA8L3N0cm9uZz5DT05UQS1DT1JSRU5URTwvdGQ+IDx0ZD48c3Ryb25nPkFnLjogPC9zdHJvbmc+MzIxMzwvdGQ+IDx0ZD48c3Ryb25nPkMvQy46IDwvc3Ryb25nPjAwMDAwMjU5MTc8L3RkPiA8L3RyPiA8L3RhYmxlPiA8L2ZpZWxkc2V0PiA8ZmllbGRzZXQ+IDxsZWdlbmQ+PHN0cm9uZz5Db250cmF0b3MgZGUgRW1wcsOpc3RpbW9zPC9zdHJvbmc+PC9sZWdlbmQ+ICA8dGFibGUgY2VsbHBhZGRpbmc9IjMiIHdpZHRoPSIxMDIlIj4gPHRyIGNsYXNzID0gInRkIj4gPHRkPjxzdHJvbmc+RW1wcsOpc3RpbW8gPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+Q0JDL0JhbmNvIDwvc3Ryb25nPjwvdGQ+IDx0ZD48c3Ryb25nPkNvbXAuIDHCqiA8YnI+UGFyY2VsYSA8L3N0cm9uZz48L3RkPiA8dGQ+PHN0cm9uZz5Db21wLiDDmmx0aW1hPGJyPlBhcmNlbGEgPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+RGF0YSBpbmNsdXPDo28gPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+UGFyY2VsYXMgPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+VmFsb3IgUGFyY2VsYSA8L3N0cm9uZz48L3RkPiA8dGQ+PHN0cm9uZz5WYWxvciBFbXByZXN0YWRvIDwvc3Ryb25nPjwvdGQ+IDwvdHI+IDx0cj4gPHRkPjYwODMxODgyODwvdGQ+IDx0ZD4wMjkgLSBJdGF1IENvbnNpZ25hZG8gUy5BLjwvdGQ+IDx0ZD4wMS8yMDIwPC90ZD4gPHRkPjEyLzIwMjU8L3RkPiA8dGQ+MTkvMTIvMjAxOTwvdGQ+IDx0ZD4wMS83MjwvdGQ+IDx0ZD5SJCAxNzYsMDA8L3RkPiA8dGQ+UiQgNi4yNTAsMDA8L3RkPiA8L3RyPiA8dHIgY2xhc3M9InRkIj4gPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+U2l0dWHDp8OjbzogPC9zdHJvbmc+QXRpdm88L3RkPiA8L3RyPiA8dHI+IDx0ZD4xODU0NzM0OTQ8L3RkPiA8dGQ+OTU1IC0gT0xFIENPTlNJR05BRE88L3RkPiA8dGQ+MDIvMjAyMDwvdGQ+IDx0ZD4wMS8yMDI2PC90ZD4gPHRkPjIxLzAxLzIwMjA8L3RkPiA8dGQ+MDAvNzI8L3RkPiA8dGQ+UiQgMTk4LDMwPC90ZD4gPHRkPlIkIDcuMDI5LDQ0PC90ZD4gPC90cj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlNpdHVhw6fDo286IDwvc3Ryb25nPkF0aXZvPC90ZD4gPC90cj4gPHRyPiA8dGQ+NjAzNDA0MzA5PC90ZD4gPHRkPjAyOSAtIEl0YXUgQ29uc2lnbmFkbyBTLkEuPC90ZD4gPHRkPjEyLzIwMTk8L3RkPiA8dGQ+MTEvMjAyNTwvdGQ+IDx0ZD4wNC8xMS8yMDE5PC90ZD4gPHRkPjAyLzcyPC90ZD4gPHRkPlIkIDE2NCw0NzwvdGQ+IDx0ZD5SJCA1Ljc5NSwyODwvdGQ+IDwvdHI+IDx0ciBjbGFzcz0idGQiPiA8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5TaXR1YcOnw6NvOiA8L3N0cm9uZz5BdGl2bzwvdGQ+IDwvdHI+IDx0cj4gPHRkPjgxMzI0Mzc1NDwvdGQ+IDx0ZD4zOTQgLSBCUkFERVNDTyBQUk9NT1RPUkE8L3RkPiA8dGQ+MTIvMjAxOTwvdGQ+IDx0ZD4xMS8yMDI1PC90ZD4gPHRkPjA1LzExLzIwMTk8L3RkPiA8dGQ+MDIvNzI8L3RkPiA8dGQ+UiQgMS4xMzAsMDA8L3RkPiA8dGQ+UiQgNTEuNTk2LDU2PC90ZD4gPC90cj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlNpdHVhw6fDo286IDwvc3Ryb25nPlIkIDEuMTMwLDAwQXRpdm88L3RkPiA8L3RyPiA8dHI+IDx0ZD41ODAwMjQ0MzQxMC0zMzE8L3RkPiA8dGQ+MjU0IC0gUGFyYW5hIEJhbmNvPC90ZD4gPHRkPjAxLzIwMjA8L3RkPiA8dGQ+MTIvMjAyNTwvdGQ+IDx0ZD4yOS8xMi8yMDE5PC90ZD4gPHRkPjAxLzcyPC90ZD4gPHRkPlIkIDkwNCwyNTwvdGQ+IDx0ZD5SJCAzMi4yMzUsNTA8L3RkPiA8L3RyPiA8dHIgY2xhc3M9InRkIj4gPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+U2l0dWHDp8OjbzogPC9zdHJvbmc+QXRpdm88L3RkPiA8L3RyPiA8dHI+IDx0ZD42MDE5MDEyNjQ8L3RkPiA8dGQ+MDI5IC0gSXRhdSBDb25zaWduYWRvIFMuQS48L3RkPiA8dGQ+MTEvMjAxOTwvdGQ+IDx0ZD4xMC8yMDI1PC90ZD4gPHRkPjIzLzEwLzIwMTk8L3RkPiA8dGQ+MDMvNzI8L3RkPiA8dGQ+UiQgMTY0LDAwPC90ZD4gPHRkPlIkIDUuODQ2LDcwPC90ZD4gPC90cj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlNpdHVhw6fDo286IDwvc3Ryb25nPkF0aXZvPC90ZD4gPC90cj4gPHRyPiA8dGQ+MjUtNTA1MDkvMTkwMTU8L3RkPiA8dGQ+OTAxIC0gQ0NCIEJSQVNJTDwvdGQ+IDx0ZD4xMS8yMDE5PC90ZD4gPHRkPjA1LzIwMjU8L3RkPiA8dGQ+MDUvMTAvMjAxOTwvdGQ+IDx0ZD4wMy82NzwvdGQ+IDx0ZD5SJCA3NDcsMTE8L3RkPiA8dGQ+UiQgMzMuMDU2LDM2PC90ZD4gPC90cj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlNpdHVhw6fDo286IDwvc3Ryb25nPkF0aXZvPC90ZD4gPC90cj4gPHRyPiA8dGQ+MDAwNTQxNjQxMjwvdGQ+IDx0ZD45MzUgLSBGQUNUQSBGSU5BTkNFSVJBIFMuQS48L3RkPiA8dGQ+MTAvMjAxOTwvdGQ+IDx0ZD4wOS8yMDI1PC90ZD4gPHRkPjE5LzA5LzIwMTk8L3RkPiA8dGQ+MDQvNzI8L3RkPiA8dGQ+UiQgMTc5LDE1PC90ZD4gPHRkPlIkIDguMjgwLDYyPC90ZD4gPC90cj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlNpdHVhw6fDo286IDwvc3Ryb25nPkF0aXZvPC90ZD4gPC90cj4gPHRyPiA8dGQ+NTUtNjQ2OTc0MS8xOTwvdGQ+IDx0ZD43MDcgLSBEYXljb3ZhbDwvdGQ+IDx0ZD4wOS8yMDE5PC90ZD4gPHRkPjA4LzIwMjU8L3RkPiA8dGQ+MDkvMDgvMjAxOTwvdGQ+IDx0ZD4wNS83MjwvdGQ+IDx0ZD5SJCAyODYsMDI8L3RkPiA8dGQ+UiQgMTIuNTcwLDY4PC90ZD4gPC90cj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlNpdHVhw6fDo286IDwvc3Ryb25nPkF0aXZvPC90ZD4gPC90cj4gPC90YWJsZT4gIDwvZmllbGRzZXQ+IDxmaWVsZHNldD4gPGxlZ2VuZD48c3Ryb25nPkNvbnRyYXRvcyBkZSBDYXJ0w6NvPC9zdHJvbmc+PC9sZWdlbmQ+IDx0YWJsZSBjZWxsc3BhY2luZz0iMTMiIHdpZHRoPSIxMDIlIj4gPHRyIGNsYXNzPSJ0ZCI+IDx0ZD48c3Ryb25nPk7CsCBDb250cmF0byA8L3N0cm9uZz48L3RkPiA8dGQ+PHN0cm9uZz5DQkMvQmFuY28gPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+RGF0YSBpbmNsdXPDo28gPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+U2l0dWHDp8OjbyA8L3N0cm9uZz48L3RkPiA8dGQ+PHN0cm9uZz5MaW1pdGUgPC9zdHJvbmc+PC90ZD4gPHRkPjxzdHJvbmc+VmFsb3IgPC9zdHJvbmc+PC90ZD4gPC90cj4gPHRyPiA8dGQ+OTEwODAyODwvdGQ+IDx0ZD4zMTggLSBCTUc8L3RkPiA8dGQ+MjIvMDMvMjAxNjwvdGQ+IDx0ZD5BdGl2bzwvdGQ+IDx0ZD5SJCA1LjAzNCw4MjwvdGQ+IDx0ZD5SJCAyMjQsMTE8L3RkPiA8L3RyPiA8L3RhYmxlPiAgPC9maWVsZHNldD4gPGJyPiA8ZGl2IGNsYXNzPSJyb2RhcGUiPiAgPGRpdiBjbGFzcz0ibWVuc2FnZW0tcm9kYXBlIj48c3Ryb25nPkRlbW9uc3RyYXRpdm8gcGFyYSBzaW1wbGVzIGNvbmZlcsOqbmNpYSAtIEFwZW5hcyBlbXByw6lzdGltb3MgYXRpdm9zIGUgc3VzcGVuc29zPC9zdHJvbmc+PC9kaXY+IDwvZGl2PiA8L2Rpdj48L2JvZHk+PC9odG1sPg==",
+  "resultInfo": {
+    "timestamp": "2020-01-27T13:12:37.710Z",
+    "requesdId": "fe44cb821e281993",
+    "queryTime": 6674
+  },
+  "billingInfo": {
+    "value": 1,
+    "charged": true,
+    "balance": 15,
+    "balanceValidUntil": "2020-01-31T00:00:00.000-0300",
+    "subscriptionId": "17zh9njjiuw1b"
+  }
+}

@@ -1,0 +1,32 @@
+<nav class="pcoded-navbar">
+    <div class="pcoded-inner-navbar main-menu">
+        <div class="pcoded-navigatio-lavel">Ferramentas</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                    <span class="pcoded-mtext">Ferramenta</span>
+                </a>
+                <ul class="pcoded-submenu">
+                    <li class="">
+                        <a href="{% url 'data_consig:cpf_view' %}">
+                            <span class="pcoded-mtext">Consulta</span>
+                        </a>
+                    </li>
+                    {% if request.user.usuario.role == 777 %}
+                    <li>
+                        <a href="{% url 'auth:new_user' %}">
+                            <span class="pcoded-mtext">Cadastrar Novo Usuário</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'auth:list_user' %}">
+                            <span class="pcoded-mtext">Listar Usuários</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

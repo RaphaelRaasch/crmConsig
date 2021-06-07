@@ -1,0 +1,52 @@
+<nav class="navbar header-navbar pcoded-header">
+    <div class="navbar-wrapper">
+
+        <div class="navbar-logo">
+            <a class="mobile-menu" href="#!" id="mobile-collapse">
+                <i class="feather icon-menu"></i>
+            </a>
+            <a href="{% url 'data_consig:cpf_view' %}">
+                Início
+            </a>
+            <a class="mobile-options">
+                <i class="feather icon-more-horizontal"></i>
+            </a>
+        </div>
+        <div class="navbar-container container-fluid">
+            <ul class="nav-left">
+                <li class="header-search">
+                    <div class="main-search morphsearch-search">
+                        <div class="input-group">
+                            <span class="input-group-addon search-close"><i class="feather icon-x"></i></span>
+                            <input class="form-control" id="search_input_1" type="text" required>
+                            <span class="input-group-addon search-btn"><i class="feather icon-search" id="search_btn_1"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="form_buttons main-search morphsearch-search">
+                    <form action="{% url 'data_consig:cpf_view' %}" method="POST">
+                        {% csrf_token %}
+                        <input hidden id="id_cpf_search" name="cpf" type="text" required>
+                        <button class="btn hor-grd btn-grd-inverse btn-round btn-mini" id="search_cpf_btn">Pesquisar
+                            CPF
+                        </button>
+                    </form>
+                    <form action="{% url 'data_consig:matricula_detalhada_view' %}" class="ml-2" method="POST">
+                        {% csrf_token %}
+                        <input hidden id="id_matricula_search" name="matricula" type="text" required>
+                        <button class="btn hor-grd btn-grd-inverse btn-round btn-mini" id="search_matricula_btn">
+                            Pesquisar Matrícula
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <a href="#!" onclick="javascript:toggleFullScreen()">
+                        <i class="feather icon-maximize full-screen"></i>
+                    </a>
+                </li>
+            </ul>
+
+            {% include 'theme_components/user_profile.html' %}
+        </div>
+    </div>
+</nav>

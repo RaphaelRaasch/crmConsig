@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load custom_tags %}
+
+{% block main_content %}
+
+<!-- Page-header start -->
+<div class="page-header">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <div class="d-inline">
+                    <h4 id="perfil_text">Perfil</h4>
+                    <span style="text-transform: none;">Informações detalhadas do perfil do usuário</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="page-header-breadcrumb">
+                <ul class="breadcrumb-title">
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'data_consig:cpf_view' %}"> <i class="feather icon-home"></i> </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="{% url 'data_consig:cpf_view' %}">Pesquisa</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        User Profile
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page-header end -->
+
+<!-- Page-body start -->
+<div class="page-body">
+    <!--profile cover start-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="cover-profile">
+                <div class="profile-bg-img">
+                    <img class="profile-bg-img img-fluid" src="{% static 'user-profile\bg-img1.jpg' %}" alt="bg-img">
+                    <div class="card-block user-info">
+                        <div class="col-md-12">
+                            <div class="media-left">
+                                <a href="#" class="profile-image">
+                                    {% if user.photo %}
+                                        <img class="user-img img-radius" width="150" src="{% get_media_prefix %}{{ user.photo }}" alt="user-img">
+                                    {% else %}
+                                        <img src="{% get_media_prefix %}profile/istockphoto-477333976-612x612.jpg" width="150" class="img-radius" alt="User-Profile-Image">
+                                    {% endif %}
+                                </a>
+                            </div>
+                            <div class="media-body row">
+                                <div class="col-lg-12">
+                                    <div class="user-title">
+                                        <h2>{{ user.name|title }}</h2>
+                                        <span class="text-white"><b>Empresa:</b> {{ user.empresa.nome|title }}</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="pull-right cover-btn">
+                                        <a href="{% url 'auth:atualizar_senha' request.user.pk %}" class="btn btn-primary m-r-10 m-b-5"><i class="icofont icofont-refresh"></i>Atualizar dados</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--profile cover end-->
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- tab content start -->
+            <div class="tab-content">
+                <!-- tab panel personal start -->
+                <div class="tab-pane active" id="personal" role="tabpanel">
+                    <!-- personal card start -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-header-text">Sobre</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="view-info">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="general-info">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="table-responsive">
+                                                        <table class="table m-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">Nome</th>
+                                                                    <td id="profile_name">{{ user.name }}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">Nível de Permissão</th>
+                                                                    <td id="profile_role">{{ user.role|role_text }}</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!-- end of table col-lg-6 -->
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">Phone</th>
+                                                                    <td>{{ user.phone }}</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!-- end of table col-lg-6 -->
+                                            </div>
+                                            <!-- end of row -->
+                                        </div>
+                                        <!-- end of general info -->
+                                    </div>
+                                    <!-- end of col-lg-12 -->
+                                </div>
+                                <!-- end of row -->
+                            </div>
+                        </div>
+                        <!-- end of card-block -->
+                    </div>
+                    <!-- personal card end-->
+                </div>
+            </div>
+            <!-- tab content end -->
+        </div>
+    </div>
+</div>
+<!-- Page-body end -->
+{% endblock %}

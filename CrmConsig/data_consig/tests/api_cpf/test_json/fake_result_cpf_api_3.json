@@ -1,0 +1,16 @@
+{
+  "cpf": "02149518805",
+  "status_code": 200,
+  "resultInfo": {
+    "timestamp": "2020-01-27T13:20:12.087Z",
+    "requesdId": "23802a5ffefc9f54",
+    "queryTime": 172
+  },
+  "billingInfo": {
+    "value": 1,
+    "charged": true,
+    "balance": 70,
+    "balanceValidUntil": "2020-01-31T00:00:00.000-0300",
+    "subscriptionId": "1rtvpp2ltuhyx"
+  }
+}

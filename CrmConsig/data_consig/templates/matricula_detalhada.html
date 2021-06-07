@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+{% block main_content %}
+{% if error_msg %}
+<div class="alert alert-danger">
+    {{ error_msg }}
+</div>
+{% endif %}
+<!--Inicio de dados do cliente -->
+<div class="card-deck mt-3">
+    <div class="card">
+        <div class=" card-body">
+            <h5 class="font-weight-bold">Dados do Cliente: {{ matricula_detalhada.nome|first_and_last_name|title }}</h5>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div style="font-size:14px"><b>Nome:</b> <span id="nome_cliente">{{ matricula_detalhada.nome|title }}</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-8">
+                    <div><b>Data de nascimento:</b> {{ matricula_detalhada.dt_nascimento|date:"d/m/Y" }}
+                        ({{ matricula_detalhada.dt_nascimento|age }} anos)
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div><b>Sexo:</b> {{ matricula_detalhada.genero|title }}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div><b>CPF:</b> {{ matricula_detalhada.cpf|format_cpf }}</div>
+                </div>
+                <div class="col-4">
+                    <div><b>DIB:</b> {{matricula_detalhada.dib|date:"d/m/Y" }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de sessão de dados de matrícula -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="font-weight-bold d-flex align-items-center">
+                <span data-original-title="{{ matricula_detalhada.descricao_matricula }}" data-toggle="tooltip">Matrícula: {{ matricula_detalhada.matricula }} - {{ matricula_detalhada.codigo_matricula }}</span>
+                <span class="ml-auto font-weight-normal" style="font-size: 16px;">{{ matricula_detalhada.situacao|first_word }}</span>
+            </h5>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div>
+                        <b>Remuneração:</b>
+                        <span id="valor_matricula_cliente">{{ matricula_detalhada.valor_matricula|currency }}</span>
+                    </div>
+                    <div>
+                        <b>Bloqueio de Empréstimo:</b>
+                        {% if matricula_detalhada.bloqueio_emprestimo %}
+                        <i
+                                class="far fa-check-circle alert-success alert-success-1"
+                                data-container=".alert-success-1" data-original-title="Sim"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% else %}
+                        <i
+                                class="far fa-times-circle alert-danger alert-danger-1"
+                                data-container=".alert-danger-1" data-original-title="Não"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <b>Permite Empréstimo:</b>
+                        {% if matricula_detalhada.permite_emprestimo %}
+                        <i
+                                class="far fa-check-circle alert-success alert-success-2"
+                                data-container=".alert-success-2" data-original-title="Sim"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% else %}
+                        <i
+                                class="far fa-times-circle alert-danger alert-danger-2"
+                                data-container=".alert-danger-2" data-original-title="Não"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <b>Pensão Alim.:</b>
+                        {% if matricula_detalhada.pensao_alimenticia %}
+                        <i
+                                class="far fa-check-circle alert-success alert-success-3"
+                                data-container=".alert-success-3" data-original-title="Sim"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% else %}
+                        <i
+                                class="far fa-times-circle alert-danger alert-danger-3"
+                                data-container=".alert-danger-3" data-original-title="Não"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <b>Representante Legal:</b>
+                        {% if matricula_detalhada.representante_legal %}
+                        <i
+                                class="far fa-check-circle alert-success alert-success-4"
+                                data-container=".alert-success-4" data-original-title="Sim"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% else %}
+                        <i
+                                class="far fa-times-circle alert-danger alert-danger-4"
+                                data-container=".alert-danger-4" data-original-title="Não"
+                                data-toggle="tooltip"
+                        ></i>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div><b>Descrição:</b> <span
+                            id="descricao_matricula">{{ matricula_detalhada.descricao_matricula }}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio de DADOS BANCÁRIOS -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="font-weight-bold">Dados Bancários</h5>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <b>Banco:</b>
+                    {{ matricula_detalhada.codigo_banco|default_if_none:"NA" }} - {{ matricula_detalhada.nome_banco|default_if_none:"NA" }}
+                    <br>
+                    <b>Agencia:</b> <span id="agencia_banco">{{ matricula_detalhada.codigo_agencia|default_if_none:"NA" }}</span>
+                </div>
+                <div class="col-6">
+                    {% with tipo_pagamento=matricula_detalhada.tipo_pagamento|account_type %}
+                        <!-- Adição de custom_tag para tipo de conta em dados bancários -->
+                        <b>Tipo de conta:</b>
+                        <span data-original-title="{{ tipo_pagamento.1|default_if_none:'NA' }}" data-toggle="tooltip">{{ tipo_pagamento.0|default_if_none:"NA" }}</span> <br>
+                    {% endwith %}
+                    <b>Conta:</b> {{ matricula_detalhada.numero_pagamento|default_if_none:"NA"|l_strip_zeros }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Inicio de tabela de contratos e simulador -->
+<div class="card">
+    <div class="card-body ">
+        <!-- Inicio de visualização de dados de margem/simulador/ chamada de API real Time -->
+        <div class="d-flex align-items-center mb-4">
+            <h5 class="font-weight-bold">Contratos</h5>
+            {% if matricula_detalhada|is_real_time_and_updated %}
+            <form action="{% url 'data_consig:matricula_detalhada_view' %}" class="ml-3" method="POST">
+                {% csrf_token %}
+                <input hidden name="real_time" type="text" value="True">
+                <input hidden name="matricula" type="text" value="{{ matricula_detalhada.matricula }}">
+                <button class="btn btn-success btn-icon" type="submit" id="real_time_submit">
+                    <i class="icofont icofont-check-circled mr-0"></i>
+                </button>
+                <span class="ml-3" id="real_time_date">{{ matricula_detalhada.updated_at|date:"d/m/Y" }}</span>
+            </form>
+            {% else %}
+            <form action="{% url 'data_consig:matricula_detalhada_view' %}" class="ml-3" method="POST">
+                {% csrf_token %}
+                <input hidden name="real_time" type="text" value="True">
+                <input hidden name="matricula" type="text" value="{{ matricula_detalhada.matricula }}">
+                <button class="btn btn-inverse btn-outline-inverse btn-icon" type="submit" id="real_time_submit">
+                    <i class="icofont icofont-exchange mr-0"></i>
+                </button>
+                {% if matricula_detalhada.real_time %}
+                <span class="font-weight-bold ml-3" id="real_time_date">{{ matricula_detalhada.updated_at|date:"d/m/Y" }}</span>
+                {% endif %}
+            </form>
+            {% endif %}
+            <div class="ml-auto margem_simulada">
+                {% if matricula_detalhada.margem_consignavel %}
+                <span>
+                        <b>Margem Empréstimo: </b> {{ matricula_detalhada.margem_emprestimo|currency }}
+                    </span>
+                <span class="ml-5">
+                        <b>Margem Cartão: </b> {{ matricula_detalhada.margem_cartao|currency }}
+                    </span>
+                {% else %}
+                <span>
+                        <b>Simulação de Margem: </b>
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+        <!-- Inicio de tabela de contratos de EMPRESTIMO -->
+        <div class="table-responsive">
+            {% if contratos_emprestimo %}
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col" class="text-left"><b>Banco</b></th>
+                    <th scope="col" class="text-left"><b>Contrato</b></th>
+                   <!-- <th scope="col"><b>Situação</b></th>-->
+                    <th scope="col"><b>Início</b></th>
+                    <th scope="col"><b>Final</b></th>
+                    <th scope="col"><b>Inclusão</b></th>
+                    <th scope="col" style="text-align:right"><b>R$ Contrato</b></th>
+                    <th scope="col" style="text-align:right"><b>R$ Parcela</b></th>
+                    <th scope="col"><b>Prazo</b></th>
+                    <th scope="col"><b>A Pagar</b></th>
+                    <th scope="col" style="text-align:right"><b>Saldo</b></th>
+                    <th scope="col"><b>Taxa</b></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for contrato in contratos_emprestimo %}
+                <tr>
+                    <th scope="row" class="text-left">{{ contrato.nome_banco }}</th>
+                    <td class="contrato_emprestimo text-left">{{ contrato.contrato|l_strip_zeros }}</td>
+                    <!--<td class="situacao_emprestimo">{{ contrato.situacao }}</td>-->
+                    <td>{{ contrato.competencia_inicio_desconto|date:"d/m/Y" }}</td>
+                    <td>{{ contrato.competencia_fim_desconto|date:"d/m/Y" }}</td>
+                    <td>{{ contrato.data_inclusao|date:"d/m/Y" }}</td>
+                    <td style="text-align:right">{{ contrato.valor_emprestimo|currency }}</td>
+                    <td style="text-align:right">{{ contrato.valor_parcela|currency }}</td>
+                    <td>{{ contrato.quantidade_parcelas }}</td>
+                    <td>{{ contrato.parcelas_aberto }}</td>
+                    <td style="text-align:right">{{ contrato.saldo|currency }}</td>
+                    <td>{{ contrato.taxa|currency}}%</td>
+                </tr>
+                {%endfor%}
+                        <!-- Inicio de tabela de contratos de CARTAO -->
+                {% if contratos_cartao %}
+                {% for contrato in contratos_cartao %}
+                <tr class="contratos_cartao_row">
+                    <th scope="row" class="text-left">{{ contrato.nome_banco }} Cartão</th>
+                    <td class="contrato_cartao text-left">{{ contrato.contrato|l_strip_zeros }}</td>
+                    <!--<td>{{ contrato.situacao }}</td>-->
+                    <td>{{ contrato.inicio_contrato|date:"d/m/Y" }}</td>
+                    <td>{{ contrato.inclusao_contrato|date:"d/m/Y" }}</td>
+                    <td></td>
+                    <td style="text-align:right">{{ contrato.limite_cartao|currency }}</td>
+                    <td style="text-align:right">{{ contrato.valor_reservado|currency }}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                {%endfor%}
+                {% endif %}
+                </tbody>
+            </table>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-block">
+
+        <div class="row">
+            <div class="col-sm-12 col-xl-4 m-b-30">
+                <h4 class="sub-title">Status</h4>
+                <select id="hello-single" class="form-control">
+                    {%if status.perfil == 'Comercial'%}
+                        {%for s in status%}
+                        <option value="cheese">lala</option>
+                        {%endfor%}
+                    {%endif%}
+                </select>
+            </div>
+    </div>
+</div>
+<div>
+
+</div>
+{% endblock %}
